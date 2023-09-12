@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @keyframes animacao {
+            0% {
+                background-image: url('https://s2-g1.glbimg.com/edM1HJtDGbHdDXZvhIJfUGiyWrA=/0x0:1080x1350/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2020/9/G/qfvEJ5Qdiq18A4BKQGJQ/matue4.jpg');
+            }
+
+            33% {
+                background-image: url('https://i.pinimg.com/736x/f5/0f/8f/f50f8f663dff17946e84445beee4330a.jpg');
+            }
+
+            66% {
+                background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTWTTlV-d3CmZwSF0hO7jYBouRy3-w7doeH4pzDBTZTstnbeAnJjzpnNQg01icAM9A21E&usqp=CAU');
+            }
+
+            100% {
+                background-image: url('https://s2-g1.glbimg.com/edM1HJtDGbHdDXZvhIJfUGiyWrA=/0x0:1080x1350/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2020/9/G/qfvEJ5Qdiq18A4BKQGJQ/matue4.jpg');
+            }
+        }
+
+        body {
+            background-image: linear-gradient(to bottom, rgba(202, 11, 202, 0.493), rgb(192, 189, 189));
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.699);
+            margin: 20px;
+        }
+
+        header h1 {
+            margin-bottom: 0px;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+            max-width: 1200px;
+            margin: 20px;
+            margin: auto;
+        }
+
+        main #retrato {
+            height: 430px;
+            width: 270px;
+            background-color: white;
+            padding: 5px;
+            text-align: center;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.459);
+        }
+
+        main #foto {
+            height: 90%;
+            width: 100%;
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            animation-name: animacao;
+            animation-iteration-count: infinite;
+            animation-duration: 10s;
+        }
+
+        main #retrato p {
+            font-size: 0.9em;
+        }
+
+        main > p {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        main div.musicas, main h2, main h3, main ul {
+            align-self: flex-start;
+        }
+
+        main h3 {
+            margin-bottom: 0;
+        }
+
+        main a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        main a:hover {
+            color: purple;
+            text-decoration: underline;
+            transition: .2s;
+        }
+
+        main div.musicas dt {
+            display: inline-block;
+            background-color: purple;
+            color: white;
+            padding: 5px;
+            margin-top: 30px;
+            border-radius: 5px;
+        }
+
+        main dt {
+            font-weight: bold;
+        }
+
+        main dd::before {
+            content: '• ';
+        }
+
+        footer {
+            background-color: rgb(82, 80, 80);
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        footer * {
+            margin: 0;
+            padding: 0;
+        }
+
+        footer a {
+            text-decoration: none;
+            font-weight: bold;
+            color: inherit;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> Matheus Brasileiro Aguiar, Matuê</h1>
+        <h2>Cantor, compositor e empresário</h2>
+    </header>
+
+    <main>
+        <div id="retrato">
+            <div id="foto"></div>
+            <p>Matuê, em seus diversos estilos de cabelo</p>
+        </div>
+
+        <p>Matheus Brasileiro Aguiar, mais conhecido pelo nome artístico Matuê, é um rapper, cantor e compositor brasileiro. Ficou conhecido com os singles "Anos Luz", lançado em 2017 e pelo álbum "Máquina do tempo" lançado em 2020. É considerado um dos símbolos do trap brasileiro</p>
+
+        <h2>Discografia</h2>
+
+        <h3>Álbuns de estúdio</h3>
+        <ul>
+            <li><a href="https://www.youtube.com/watch?v=spIZM9Nnqa4&list=PLEd-urvJlSm9PfBtTyK_IuslJstIBq7OF&pp=iAQB" target="_blank">Máquina do Tempo (2020)</a></li>
+        </ul>
+
+        <div class="musicas">
+            <dl>
+                <dt>2016</dt>
+                <dd>RBN</dd>
+                <dt>2017</dt>
+                <dd>Boomzin</dd>
+                <dd>100 Placas</dd>
+                <dd>De Alta</dd>
+                <dd>Celine</dd>
+                <dd>Lama no Copo</dd>
+                <dd>H.O.R.T.A</dd>
+                <dd>Anos Luz</dd>
+                <dt>2018</dt>
+                <dd>De Peça em Peça</dd>
+                <dd>Outro Plano</dd>
+                <dd>Urubus</dd>
+                <dd>QUem manda é a 30</dd>
+                <dd>3am</dd>
+                <dd>A Morte do Autotune</dd>
+                <dt>2019</dt>
+                <dd>Banco</dd>
+                <dd>Kenny G</dd>
+                <dd>Mantém</dd>
+                <dd>Quem Mandou Chamar</dd>
+                <dt>2021</dt>
+                <dd>M4</dd>
+                <dd>Quer Voar</dd>
+                <dd>Groupies</dd>
+                <dd>Sem Dó</dd>
+                <dt>2022</dt>
+                <dd>Vampiro</dd>
+                <dt>2023</dt>
+                <dd>Flow Espacial</dd>
+                <dd>Conexões de Máfia</dd>
+            </dl>
+        </div>
+    </main>
+    
+    <footer> 
+        <p>Desenvolvido por <a href="https://github.com/devgabrielbrito" target="_blank">Gabriel Lima</a> como atividade do curso da B7web</p>
+    </footer>
+</body>
+</html>
